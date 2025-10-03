@@ -12,6 +12,7 @@
   },
   "author": "",
   "license": "ISC",
+  "type": "module",
   "bin": {
     "gendiff": "bin/gendiff.js"
   },
