@@ -1,6 +1,7 @@
 #!/usr/bin/env node
-import { Command } from 'commander';
-const program = new Command();
+import { Command } from 'commander'
+
+const program = new Command()
 
 program
   .name('gendiff')
@@ -8,5 +9,9 @@ program
   .description('Compares two configuration files and shows a difference.')
   .version('1.0.0')
   .option('-f, --format [type]', 'output format')
+  .action((filepath1, filepath2) => {
+    console.log('Первый файл:', filepath1)
+    console.log('Второй файл:', filepath2)
+  })
 
 program.parse(process.argv);
