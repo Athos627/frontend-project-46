@@ -1,0 +1,12 @@
+{"version": 2, "width": 157, "height": 49, "timestamp": 1760624987, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+[0.018219, "o", "\u001b[?2004h\u001b]0;athos627@DESKTOP-BODRJ6O: /mnt/c/hexlet/project-2/frontend-project-46\u0007\u001b[01;32mathos627@DESKTOP-BODRJ6O\u001b[00m:\u001b[01;34m/mnt/c/hexlet/project-2/frontend-project-46\u001b[00m$ "]
+[8.803725, "o", "gendiff ./__fixtures__/file1.json ./__fixtures__/file2.json"]
+[10.488602, "o", "\r\n\u001b[?2004l\r"]
+[10.81402, "o", "{\r\n  - follow: false\r\n    host: hexlet.io\r\n  - proxy: 123.234.53.22\r\n  - timeout: 50\r\n  + timeout: 20\r\n  + verbose: true\r\n}\r\n"]
+[10.830754, "o", "\u001b[?2004h\u001b]0;athos627@DESKTOP-BODRJ6O: /mnt/c/hexlet/project-2/frontend-project-46\u0007\u001b[01;32mathos627@DESKTOP-BODRJ6O\u001b[00m:\u001b[01;34m/mnt/c/hexlet/project-2/frontend-project-46\u001b[00m$ "]
+[14.585799, "o", "e"]
+[14.939211, "o", "x"]
+[15.261104, "o", "i"]
+[15.71881, "o", "t"]
+[16.691537, "o", "\r\n\u001b[?2004l\r"]
+[16.691861, "o", "exit\r\n"]
