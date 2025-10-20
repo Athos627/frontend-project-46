@@ -5,7 +5,8 @@ const parsedFile = (filepath) => {
   const makePath = (fileName) => {
     if (path.isAbsolute(fileName)) {
       return path.resolve(fileName)
-    } else {
+    }
+    else {
       return path.resolve(process.cwd(), fileName)
     }
   }

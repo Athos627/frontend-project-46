@@ -14,4 +14,4 @@ program
     console.log(getDiff(filepath1, filepath2))
   })
 
-program.parse(process.argv);
+program.parse(process.argv)
