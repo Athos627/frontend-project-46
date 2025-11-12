@@ -1,5 +1,6 @@
 import fs from 'fs'
 import path from 'path'
+import yaml from 'js-yaml'
 
 const parsedFile = (filepath) => {
   const makePath = (fileName) => {
@@ -10,11 +11,21 @@ const parsedFile = (filepath) => {
       return path.resolve(process.cwd(), fileName)
     }
   }
+
   const fileContent = fs.readFileSync(makePath(filepath), 'utf-8')
-  const parsed = (data) => {
-    return JSON.parse(data)
+
+  const extention = filepath => path.extname(filepath)
+
+  const parsed = (data, extention) => {
+    if (extention === '.json') {
+      return JSON.parse(data)
+    }
+    if (extention === '.yml' || extention === '.yaml') {
+      return yaml.load(data)
+    }
   }
-  return parsed(fileContent)
+
+  return parsed(fileContent, extention(filepath))
 }
 
 export default parsedFile
