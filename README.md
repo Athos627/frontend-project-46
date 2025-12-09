@@ -6,5 +6,8 @@
 
 ### Asciinema
 
-asciinema gendiff-json-1: https://asciinema.org/a/1douJesPqZhh361jjJSBO8l8v
-asciinema gendiff-yaml-2: https://asciinema.org/a/wt22wNETgopDY2eJoKATkHt4I
+asciinema gendiff-json-1: https://asciinema.org/a/1douJesPqZhh361jjJSBO8l8v  
+asciinema gendiff-yaml-2: https://asciinema.org/a/wt22wNETgopDY2eJoKATkHt4I  
+asciinema gendiff-format-stylish: https://asciinema.org/a/muq9eMIF7i4aBPTdYRUnkpnTI  
+asciinema gendiff-format-plain: https://asciinema.org/a/42mGty1rdusTybBUxCio3Ad0T  
+asciinema gendiff-format-json: https://asciinema.org/a/Tb8U0va3vMD68ubIHwWhdDPYn  
