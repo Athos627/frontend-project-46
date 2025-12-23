@@ -2,16 +2,16 @@ import fs from 'fs'
 import path from 'path'
 import yaml from 'js-yaml'
 
-const parsedFile = (filepath) => {
-  const makePath = (fileName) => {
-    if (path.isAbsolute(fileName)) {
-      return path.resolve(fileName)
-    }
-    else {
-      return path.resolve(process.cwd(), fileName)
-    }
+const makePath = (fileName) => {
+  if (path.isAbsolute(fileName)) {
+    return path.resolve(fileName)
   }
+  else {
+    return path.resolve(process.cwd(), fileName)
+  }
+}
 
+const parsedFile = (filepath) => {
   const fileContent = fs.readFileSync(makePath(filepath), 'utf-8')
 
   const extention = filepath => path.extname(filepath)
