@@ -13,6 +13,8 @@ const toFormat = (data, format) => {
     case 'json': {
       return toJson(data)
     }
+    default:
+      throw new Error(`Unknown output format: '${format}'.`)
   }
 }
 

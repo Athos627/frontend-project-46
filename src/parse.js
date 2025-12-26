@@ -17,11 +17,14 @@ const parsedFile = (filepath) => {
   const extention = filepath => path.extname(filepath)
 
   const parsed = (data, extention) => {
-    if (extention === '.json') {
-      return JSON.parse(data)
-    }
-    if (extention === '.yml' || extention === '.yaml') {
-      return yaml.load(data)
+    switch (extention) {
+      case '.json':
+        return JSON.parse(data)
+      case '.yml':
+      case '.yaml':
+        return yaml.load(data)
+      default:
+        throw new Error(`Unknown extention: '${extention}'.`)
     }
   }
 
